@@ -3,11 +3,12 @@
   color: white;
 }
 
-.hero-container {
-
+.hero-container,
+.hero-wrapper {
   display: flex;
   align-items: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .hero-text {
@@ -15,12 +16,9 @@
   flex: 1;
   margin-bottom: 100px;
   max-width: 600px;
-  
 }
 
 .hero-title {
-
-  color: rgb;
   font-size: 3rem;
   margin-bottom: 0px;
 }
@@ -38,11 +36,10 @@
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 20px;
   margin-left: 60px;
-
-  font-size: 1.5rem;
+  display: flex;
   align-items: center;
 }
 
@@ -51,46 +48,44 @@
   gap: 16px;
   margin-bottom: 20px;
   margin-left: 50px;
+  flex-wrap: wrap;
 }
 
 .hero-cta,
-.cv-button {
+.cv-button,
+.hero-cta1 {
   background: #2563eb;
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
   transition: background 0.3s ease;
-
 }
 
 .hero-cta:hover,
-.cv-button:hover {
+.cv-button:hover,
+.hero-cta1:hover {
   background: green;
 }
 
-.hero-socials a1 {
-  color: white;
+.hero-socials {
+  margin-left: 50px;
+  display: flex;
+  gap: 16px;
   font-size: 1.5rem;
-  margin-left: 180px;
-  transition: transform 0.3s ease;
- gap: 16px;
-
 }
-.hero-socials a2 {
+
+.hero-socials a {
   color: white;
-  font-size: 1.5rem;
-  margin-left: 20px;
   transition: transform 0.3s ease;
- gap: 16px;
-
 }
+
 .hero-socials a:hover {
   transform: scale(1.2);
-
 }
 
-.hero-photo-container {
+.hero-photo-container,
+.hero-image {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -120,4 +115,61 @@
   border-radius: 50%;
   box-shadow: 0 0 60px 20px rgba(59, 130, 246, 0.4);
   z-index: -1;
+}
+
+/* ✅ Responsive Section */
+@media (max-width: 1024px) {
+  .hero-text {
+    margin-left: 50px;
+  }
+
+  .hero-photo {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .hero-subtitle,
+  .hero-buttons,
+  .hero-socials {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .hero-photo {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+
+  .hero-buttons a {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .hero-photo {
+    width: 250px;
+    height: 250px;
+  }
 }
