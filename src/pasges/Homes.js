@@ -84,8 +84,8 @@ function Home() {
           </div>
 
           <div className="hero-socials">
-            <a1 href="https://github.com/SyxHieu" target="_blank" rel="noreferrer"><FaGithub /></a1>
-            <a2 href="https://www.linkedin.com/in/hi%E1%BA%BFu-v%C3%B5-s%E1%BB%B9-835691345/" target="_blank" rel="noreferrer"><FaLinkedin /></a2>
+            <a href="https://github.com/SyxHieu" target="_blank" rel="noreferrer"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/hi%E1%BA%BFu-v%C3%B5-s%E1%BB%B9-835691345/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
           </div>
         </motion.div>
 
